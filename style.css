@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'BMWTypeNext-Regular';
+    src: url('fonts/BMWTypeNext-Regular.woff2') format('woff2'),
+         url('fonts/BMWTypeNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'BMWTypeNext-Regular', sans-serif;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-image {
+    animation: rotate 5s linear infinite;
+}
